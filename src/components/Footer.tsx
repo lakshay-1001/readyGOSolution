@@ -1,6 +1,13 @@
 import { Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const Footer = () => {
+    const handleBlogClick = () => {
+    toast("Blog section coming soon!", {
+        icon: "📢",
+    });
+  };
   return (
     <footer className="w-full bg-white mt-16">
 
@@ -42,19 +49,27 @@ const Footer = () => {
         {/* RIGHT NAVIGATION */}
         <ul className="flex flex-col md:flex-row gap-24 font-dmsans font-medium text-[20px] leading-[100%] tracking-[0%] text-gray-700">
 
-          <li className="cursor-pointer hover:text-green-500 transition">
-            Home
-          </li>
+            <Link to="/">
+                <li className="cursor-pointer hover:text-green-500 transition">
+                    Home
+                </li>
+            </Link>
 
-          <li className="cursor-pointer hover:text-green-500 transition">
-            About Us
-          </li>
+            <Link to="/about">
+                <li className="cursor-pointer hover:text-green-500 transition">
+                    About Us
+                </li>
+            </Link>
 
-          <li className="cursor-pointer hover:text-green-500 transition">
-            Services
-          </li>
+            <Link to="/services">
+                <li className="cursor-pointer hover:text-green-500 transition">
+                    Services
+                </li>
+            </Link>
 
-          <li className="cursor-pointer hover:text-green-500 transition">
+          <li
+          onClick={handleBlogClick} 
+          className="cursor-pointer hover:text-green-500 transition">
             Blog
           </li>
 
