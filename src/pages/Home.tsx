@@ -55,7 +55,7 @@ const Home = () => {
                 <img
                 src={backImage}
                 alt=""
-                className="w-full h-full opacity-[0.22] object-cover"
+                className="w-full h-full opacity-[0.22] object-cover scale-x-[-1]"
                 />
             </div>
             <div className="max-w-7xl mx-auto px-6 lg:px-10 grid md:grid-cols-2 gap-12 items-center">
@@ -71,7 +71,7 @@ const Home = () => {
                     Business
                 </h1>
 
-                <p className="font-poppins font-light text-[20px] leading-[100%] tracking-[0%] text-gray-600 mb-8 max-w-lg">
+                <p className="font-poppins font-light text-[20px] leading-[28px] text-gray-600 mb-8 max-w-lg">
                     We help businesses build a strong digital presence through
                     website development, graphic design, branding, and social media
                     management.
@@ -369,7 +369,7 @@ const Home = () => {
                     <h2 className="font-poppins font-semibold text-[36px] md:text-[60px] leading-[100%] mb-8">
                     <span className="text-blue-500">Let’s</span> Build <span className="text-blue-500">Your</span> <br/>
                     Next <span className="text-blue-500">Project</span> <br/>
-                    <span className="text-blue-500">Together</span>
+                    Together
                     </h2>
 
                     <p className="font-dmsans font-medium text-[18px] md:text-[24px] leading-[100%] text-gray-600 max-w-md">
